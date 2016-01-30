@@ -11,8 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool moved = false;
     Vector3 start;
-
-    CharacterController controller;
+    
     private Vector3 moveDirection = Vector3.zero;
 
     AudioSource source;
@@ -21,13 +20,15 @@ public class PlayerMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //Get the CharacterController of this Player
-        controller = GetComponent<CharacterController>();
-
         //Get the Starting position of the Player
         start = transform.position;
         source = GetComponent<AudioSource>();
         cam = GameObject.Find("Main Camera");
+    }
+
+    public void reset()
+    {
+        transform.position = start;
     }
 
     //This Function gets called every frame
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         //Reset to start, if the player has fallen down
         if(transform.position.y < -10)
         {
-            transform.position = start;
+            reset();
         }
 
         moveDirection = Vector3.zero;
