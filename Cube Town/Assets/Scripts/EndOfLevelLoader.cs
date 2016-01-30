@@ -1,0 +1,15 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+
+public class EndOfLevelLoader : MonoBehaviour {
+
+	void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            int index = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene((SceneManager.GetSceneAt(index+1)).name);
+        }
+    }
+}
