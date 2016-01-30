@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         start = transform.position;
         source = GetComponent<AudioSource>();
         cam = GameObject.Find("Main Camera");
+        Game.current = SceneManager.GetActiveScene().name;
     }
 
     public void reset()
