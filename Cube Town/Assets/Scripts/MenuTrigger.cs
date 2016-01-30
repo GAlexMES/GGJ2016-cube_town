@@ -33,6 +33,6 @@ public class MenuTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        Start();
 	}
 }
