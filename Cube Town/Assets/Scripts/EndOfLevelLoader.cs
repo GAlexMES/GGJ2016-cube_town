@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class EndOfLevelLoader : MonoBehaviour {
     public string m_NextLevel;
+    
 
 	void OnTriggerEnter(Collider other)
     {
