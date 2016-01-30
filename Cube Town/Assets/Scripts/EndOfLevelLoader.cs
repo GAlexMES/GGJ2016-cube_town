@@ -9,6 +9,10 @@ public class EndOfLevelLoader : MonoBehaviour {
         if(other.gameObject.tag == "Player")
         {
             int index = SceneManager.GetActiveScene().buildIndex;
+            if(index == -1)
+            {
+                index = 1;
+            }
             SceneManager.LoadScene((SceneManager.GetSceneAt(index+1)).name);
         }
     }
