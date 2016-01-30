@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Change Scene to:" + m_changeSzene);
         SceneManager.LoadScene(m_changeSzene);
     }
 }
