@@ -6,10 +6,10 @@ public class EndOfLevelLoader : MonoBehaviour {
     public string m_NextLevel;
     private bool m_AllInPosition;
 
-	void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         GameObject[] objs = other.GetComponent<PlayerMovement>().objs;
-
+        
         foreach (GameObject obj in objs)
         {
             if (obj.GetComponent<RightBlock>().isInPosition)
@@ -22,7 +22,12 @@ public class EndOfLevelLoader : MonoBehaviour {
             }
         }
 
-        if(other.gameObject.tag == "Player" && m_AllInPosition)
+        if(objs.Length == 0)
+        {
+            m_AllInPosition = true;
+        }
+
+        if (other.gameObject.tag == "Player" && m_AllInPosition)
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
@@ -38,7 +43,5 @@ public class EndOfLevelLoader : MonoBehaviour {
         {
             other.gameObject.GetComponent<PlayerMovement>().reset();
         }
-
-
     }
 }
