@@ -8,21 +8,24 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0F;
     bool moved = false;
     Vector3 start;
+
     CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
-
-    private float m_TimeCounter = 0F;
 
     // Use this for initialization
     void Start()
     {
+        //Get the CharacterController of this Player
         controller = GetComponent<CharacterController>();
+
+        //Get the Starting position of the Player
         start = transform.position;
     }
 
-
+    //This Function gets called every frame
     void Update()
     {
+        //Reset to start, if the player has fallen down
         if(transform.position.y < -2)
         {
             transform.position = start;
@@ -54,27 +57,10 @@ public class PlayerMovement : MonoBehaviour
                 moved = true;
             }
             moveDirection = transform.TransformDirection(moveDirection);
-
-            if (Input.GetButton("Jump"))
-                moveDirection.y = jumpSpeed;
-
-            m_TimeCounter = 0F;
         }
         else
         {
-            if (Input.GetKeyUp(KeyCode.UpArrow))
-            {
-                moved = false;
-            }
-            else if (Input.GetKeyUp(KeyCode.DownArrow))
-            {
-                moved = false;
-            }
-            else if (Input.GetKeyUp(KeyCode.LeftArrow))
-            {
-                moved = false;
-            }
-            else if (Input.GetKeyUp(KeyCode.RightArrow))
+            if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
             {
                 moved = false;
             }
@@ -82,6 +68,5 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection);
-        m_TimeCounter = m_TimeCounter + Time.deltaTime;
     }
 }
