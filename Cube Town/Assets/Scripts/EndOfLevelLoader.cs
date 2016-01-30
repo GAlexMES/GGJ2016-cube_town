@@ -10,6 +10,9 @@ public class EndOfLevelLoader : MonoBehaviour {
     {
         if(other.gameObject.tag == "Player")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            if(GetComponent<Au)
             SceneManager.LoadScene(m_NextLevel);
         }
     }
