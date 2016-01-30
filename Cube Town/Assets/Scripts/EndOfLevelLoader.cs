@@ -35,6 +35,7 @@ public class EndOfLevelLoader : MonoBehaviour {
             {
 
             }
+
             SceneManager.LoadScene(m_NextLevel);
             Game.current = m_NextLevel;
             SaveLoad.Save();
