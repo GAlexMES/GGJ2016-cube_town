@@ -12,7 +12,7 @@ public class EndOfLevelLoader : MonoBehaviour {
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
-            if(GetComponent<Au)
+            if(audio )
             SceneManager.LoadScene(m_NextLevel);
         }
     }
