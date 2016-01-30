@@ -61,16 +61,46 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveDirection = new Vector3(-1, 0, 0);
                 moved = true;
+                if (objs.Length > 0)
+                {
+                    foreach (GameObject obj in objs)
+                    {
+                        if (obj.transform.position.Equals(new Vector3(transform.position.x - 1.0F, transform.position.y, transform.position.z)))
+                        {
+                            obj.transform.position = new Vector3(obj.transform.position.x - 1.0F, obj.transform.position.y, obj.transform.position.z);
+                        }
+                    }
+                }
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
                 moveDirection = new Vector3(0, 0, 1);
                 moved = true;
+                if (objs.Length > 0)
+                {
+                    foreach (GameObject obj in objs)
+                    {
+                        if (obj.transform.position.Equals(new Vector3(transform.position.x, transform.position.y, transform.position.z + 1.0F)))
+                        {
+                            obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z + 1.0F);
+                        }
+                    }
+                }
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
                 moveDirection = new Vector3(0, 0, -1);
                 moved = true;
+                if (objs.Length > 0)
+                {
+                    foreach (GameObject obj in objs)
+                    {
+                        if (obj.transform.position.Equals(new Vector3(transform.position.x, transform.position.y, transform.position.z - 1.0F)))
+                        {
+                            obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z - 1.0F);
+                        }
+                    }
+                }
             }
             source.Play();
         }
