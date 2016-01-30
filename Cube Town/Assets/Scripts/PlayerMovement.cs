@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+<<<<<<< HEAD
 using System;
+=======
+>>>>>>> origin/master
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour

@@ -7,7 +7,9 @@ public class DeathTriger : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("bam");
-        ResetScene.reset();
+        if (other.gameObject.tag == "Player")
+        {
+            ResetScene.reset();
+        }
     }
 }

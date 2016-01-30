@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c751b28740184bc40a4b3da563965c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NextLevel: 
+  m_NextLevel: level_6
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -177,6 +177,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.y
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_NextLevel
+      value: level_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
