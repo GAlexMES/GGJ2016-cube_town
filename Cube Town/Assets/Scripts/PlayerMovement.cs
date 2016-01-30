@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-<<<<<<< HEAD
 using System;
-=======
->>>>>>> origin/master
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
@@ -31,7 +28,11 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get the Starting position of the Player
         start = transform.position;
+
+        //Get the AudioSource to play Audio Clips
         source = GetComponent<AudioSource>();
+
+        //Get the current active SceneName
         Game.current = SceneManager.GetActiveScene().name;
     }
 
@@ -106,8 +107,5 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
-
-
-        
     }
 }

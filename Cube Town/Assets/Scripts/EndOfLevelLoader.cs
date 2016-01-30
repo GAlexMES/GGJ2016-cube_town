@@ -8,11 +8,11 @@ public class EndOfLevelLoader : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        GameObject[] objs = other.GetComponent<PlayerMovement>().objs;
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("pushable");
         
         foreach (GameObject obj in objs)
         {
-            if (obj.GetComponent<RightBlock>().isInPosition)
+            if (obj.GetComponent<PushBlock>().m_isInPosition)
             {
                 m_AllInPosition = true;
             }

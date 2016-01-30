@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PushBlock : MonoBehaviour {
+    public bool m_isInPosition;
 
     bool moving;
     Vector2 animStart;
@@ -11,7 +12,7 @@ public class PushBlock : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-	
+        m_isInPosition = false;
 	}
 	
 	// Update is called once per frame
