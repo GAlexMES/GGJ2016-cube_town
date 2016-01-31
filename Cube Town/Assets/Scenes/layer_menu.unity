@@ -292,7 +292,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 235b1fedbc8f56b4da3b3ba32e9592e5, type: 2}
     - target: {fileID: 11458122, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
       propertyPath: m_changeSzene
-      value: layer1_menu
+      value: layer2_menu
       objectReference: {fileID: 0}
     - target: {fileID: 6520684, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
       propertyPath: m_Size.x
