@@ -377,13 +377,44 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -0.00000016292068
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2322728, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &186664124 stripped
 Transform:
   m_PrefabParentObject: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
   m_PrefabInternal: {fileID: 186664123}
+--- !u!1 &186664125 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 148200, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
+  m_PrefabInternal: {fileID: 186664123}
+--- !u!23 &186664126
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186664125}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 2438d6e4d9626a74089c006f63b57275, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!1 &253325179
 GameObject:
   m_ObjectHideFlags: 0
