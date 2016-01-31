@@ -7,6 +7,7 @@ using System.IO;
 public static class SaveLoad {
 
 	public static List<string> savedGames = new List<string>();
+    private static string dashActivatingLevel = "level_8";
 			
 	//it's static so we can call it from anywhere
 	public static void Save() {
@@ -31,4 +32,12 @@ public static class SaveLoad {
 			file.Close();
 		}
 	}
+
+    private static void checkDash()
+    {
+        if (savedGames.Contains(dashActivatingLevel))
+        {
+            Game.allowDash = true;
+        }
+    }
 }
