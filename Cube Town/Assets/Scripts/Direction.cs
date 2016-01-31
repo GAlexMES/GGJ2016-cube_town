@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public enum Direction {
     UP,
     DOWN,
@@ -8,4 +9,4 @@ public enum Direction {
     RIGHT,
     FORWARD,
     BACKWARD
-}
+};
