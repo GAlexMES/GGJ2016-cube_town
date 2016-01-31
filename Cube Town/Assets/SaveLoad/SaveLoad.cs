@@ -13,13 +13,14 @@ public static class SaveLoad {
         if (!savedGames.Contains(Game.current))
         {
             SaveLoad.savedGames.Add(Game.current);
+        }
 
             BinaryFormatter bf = new BinaryFormatter();
             Debug.Log("save file location: " + Application.persistentDataPath);
             FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd"); //you can call it anything you want
             bf.Serialize(file, SaveLoad.savedGames);
             file.Close();
-        }
+        
 	}	
 	
 	public static void Load() {

@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Get the current active SceneName
         Game.current = SceneManager.GetActiveScene().name;
+
     }
 
     public void reset()
