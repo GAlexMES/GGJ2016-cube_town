@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     bool doNext = false;
     Direction direction;
     Vector2 dir;
+    bool dash = false;
     private Vector2 nextMove = Vector2.zero;
 
     Movement movement;
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Get the current active SceneName
         Game.current = SceneManager.GetActiveScene().name;
-
+        
         movement = GetComponent<Movement>();
     }
 
@@ -47,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     //This Function gets called every frame
     void Update()
     {
+       
         animTime -= Time.deltaTime;
 
         //Reset to start, if the player has fallen down
@@ -80,6 +82,13 @@ public class PlayerMovement : MonoBehaviour
             nextMove = Vector2.down;
         }
 
+        
+        if (Input.GetKey(KeyCode.D))
+        {
+            nextMove.x = nextMove.x * 4;
+            nextMove.y = nextMove.y * 4;
+        }
+
         if (animTime > 0f)
         {
             Vector2 step = Vector2.Lerp(animStart, animTarget, (animDuration - animTime) / animDuration);
@@ -95,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (doNext)
             {
+                Debug.Log("do next");
                 doNext = false;
                 if (movement.checkPush(direction, 1))
                 {
