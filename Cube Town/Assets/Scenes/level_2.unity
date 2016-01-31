@@ -552,6 +552,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 136218, guid: b115c3ab1007db94497a8fdd7e5059a4, type: 2}
+      propertyPath: m_TagString
+      value: blockage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b115c3ab1007db94497a8fdd7e5059a4, type: 2}
   m_IsPrefabParent: 0
@@ -730,6 +734,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 962c23f0c4e275e47a7a8c3c5c088701, type: 2}
+    - target: {fileID: 136218, guid: b115c3ab1007db94497a8fdd7e5059a4, type: 2}
+      propertyPath: m_TagString
+      value: blockage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b115c3ab1007db94497a8fdd7e5059a4, type: 2}
   m_IsPrefabParent: 0
