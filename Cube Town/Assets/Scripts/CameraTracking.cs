@@ -12,7 +12,7 @@ public class CameraTracking : MonoBehaviour {
     // Use this for initialization
     void Start () {
         cam = GameObject.Find("Main Camera");
-        player = GameObject.Find("Player");
+        
     }
 	
 	// Update is called once per frame
