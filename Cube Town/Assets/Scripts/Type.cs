@@ -6,4 +6,4 @@ public enum Type {
     SOLID,
     PLAYER,
     PUSH
-}
+};
