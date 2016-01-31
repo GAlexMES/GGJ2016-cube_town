@@ -25,4 +25,5 @@ EditorBuildSettings:
     path: Assets/Scenes/level_8.unity
   - enabled: 1
     path: Assets/Scenes/level_7.unity
-
+  - enabled: 1
+    path: Assets/Scenes/layer2_menu.unity
