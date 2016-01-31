@@ -21,7 +21,7 @@ public class DirectionCheck : MonoBehaviour {
         {
             if (other.gameObject.tag == "pushable")
             {
-                Debug.Log(this.GetComponentInParent<Movement>().obstruction[]);
+                //Debug.Log(this.GetComponentInParent<Movement>().obstruction[]);
             }
         }
         
