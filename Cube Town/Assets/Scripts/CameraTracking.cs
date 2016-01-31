@@ -7,7 +7,7 @@ public class CameraTracking : MonoBehaviour {
     public float camDistance = 100;
     public float camAngle = 45;
     public Vector3 up = new Vector3(0, 1, 0);
-
+ 
 
     // Use this for initialization
     void Start () {

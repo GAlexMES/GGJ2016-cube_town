@@ -600,7 +600,6 @@ Transform:
   - {fileID: 1020131376}
   - {fileID: 1920158714}
   - {fileID: 637819307}
-  - {fileID: 1400352616}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!4 &637819307 stripped
@@ -778,7 +777,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 575255534}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 415748, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_LocalPosition.x
@@ -814,11 +813,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_LocalPosition.y
@@ -826,15 +825,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0.00000032584137
       objectReference: {fileID: 0}
     - target: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.00000016292068
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
@@ -1008,10 +1007,6 @@ Transform:
   - {fileID: 491362076}
   m_Father: {fileID: 1539135698}
   m_RootOrder: 0
---- !u!4 &1400352616 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 477474, guid: ed72240b74fecc547b66b5bc4c0f1426, type: 2}
-  m_PrefabInternal: {fileID: 788146451}
 --- !u!1 &1432573466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1914,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15, y: 15, z: 3}
+  m_Size: {x: 7, y: 7, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1957673917
 GameObject:

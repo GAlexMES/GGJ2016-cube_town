@@ -294,6 +294,14 @@ Prefab:
       propertyPath: m_changeSzene
       value: layer1_menu
       objectReference: {fileID: 0}
+    - target: {fileID: 6520684, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520684, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
+      propertyPath: m_Size.y
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
   m_IsPrefabParent: 0
@@ -363,6 +371,14 @@ Prefab:
     - target: {fileID: 482792, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
       propertyPath: m_LocalPosition.z
       value: -2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520684, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520684, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
+      propertyPath: m_Size.y
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e305fec91dd98142aff0f933328228b, type: 2}
