@@ -82,8 +82,6 @@ public class PlayerMovement : MonoBehaviour
             nextMove = Vector2.down;
         }
 
-        
-        
 
         if (animTime > 0f)
         {
@@ -100,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (doNext)
             {
-                if (Input.GetKey(KeyCode.D))
+                if (Input.GetKey(KeyCode.D)&&Game.allowDash)
                 {
                     nextMove.x = nextMove.x * 4;
                     nextMove.y = nextMove.y * 4;
