@@ -738,9 +738,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8fdb6178924eb498d8b8a434c906da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intervall: 12
+  intervall: 6
   offset: 0
-  distX: -12
+  distX: -10
   distY: 0
   distZ: 0
 --- !u!114 &370399699
@@ -787,7 +787,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 370399697}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1580,8 +1580,8 @@ GameObject:
   - 33: {fileID: 964866311}
   - 135: {fileID: 964866310}
   - 23: {fileID: 964866309}
-  - 114: {fileID: 964866308}
   - 114: {fileID: 964866307}
+  - 114: {fileID: 964866308}
   m_Layer: 0
   m_Name: Sphere_1
   m_TagString: Untagged
@@ -1649,7 +1649,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 964866306}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -2583,7 +2583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8fdb6178924eb498d8b8a434c906da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intervall: 14
+  intervall: 7
   offset: 0
   distX: -12
   distY: 0
@@ -2632,7 +2632,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1776684731}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -2753,8 +2753,8 @@ GameObject:
   - 33: {fileID: 2113546312}
   - 135: {fileID: 2113546311}
   - 23: {fileID: 2113546310}
-  - 114: {fileID: 2113546309}
   - 114: {fileID: 2113546308}
+  - 114: {fileID: 2113546309}
   m_Layer: 0
   m_Name: Sphere_2
   m_TagString: Untagged
@@ -2822,7 +2822,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2113546307}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

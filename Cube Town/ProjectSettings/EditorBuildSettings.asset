@@ -23,3 +23,5 @@ EditorBuildSettings:
     path: Assets/Scenes/layer_menu.unity
   - enabled: 1
     path: Assets/Scenes/level_8.unity
+  - enabled: 1
+    path: Assets/Scenes/level_9.unity
