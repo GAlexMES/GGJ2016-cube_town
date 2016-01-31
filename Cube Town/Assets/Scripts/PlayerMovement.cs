@@ -77,11 +77,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         
-        if (Input.GetKey(KeyCode.D))
-        {
-            nextMove.x = nextMove.x * 4;
-            nextMove.y = nextMove.y * 4;
-        }
+        
 
         if (animTime > 0f)
         {
@@ -97,6 +93,11 @@ public class PlayerMovement : MonoBehaviour
             }
             if (doNext)
             {
+                if (Input.GetKey(KeyCode.D))
+                {
+                    nextMove.x = nextMove.x * 4;
+                    nextMove.y = nextMove.y * 4;
+                }
                 Debug.Log("do next");
                 doNext = false;
                 moving = true;
