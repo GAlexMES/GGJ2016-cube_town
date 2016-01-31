@@ -763,6 +763,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e151aa6f9cfa246b4c726a4493400d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camDistance: 100
+  camAngle: 45
+  up: {x: 0, y: 1, z: 0}
 --- !u!1 &1089478234
 GameObject:
   m_ObjectHideFlags: 0
