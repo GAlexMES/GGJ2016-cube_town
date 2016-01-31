@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     float animDuration = .2f;
     bool moving = false;
     bool doNext = false;
+    bool dash = false;
     private Vector2 nextMove = Vector2.zero;
 
     AudioSource source;
@@ -45,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     //This Function gets called every frame
     void Update()
     {
+       
         animTime -= Time.deltaTime;
 
         //Reset to start, if the player has fallen down
@@ -74,6 +76,13 @@ public class PlayerMovement : MonoBehaviour
             nextMove = Vector2.down;
         }
 
+        
+        if (Input.GetKey(KeyCode.D))
+        {
+            nextMove.x = nextMove.x * 3;
+            nextMove.y = nextMove.y * 3;
+        }
+
         if (animTime > 0f)
         {
             Vector2 step = Vector2.Lerp(animStart, animTarget, (animDuration - animTime) / animDuration);
@@ -88,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (doNext)
             {
+                Debug.Log("do next");
                 doNext = false;
                 moving = true;
                 animTime = animDuration;
