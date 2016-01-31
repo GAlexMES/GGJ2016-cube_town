@@ -99,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
                 {
                     Vector3 pos = VectorUtil.copy(block.transform.position);
                     VectorUtil.round(pos);
-                    Debug.Log("check: " + target + " = " + pos);
                     if (Vector3.Equals(target, pos))
                     {
                         block.GetComponent<PushBlock>().push(nextMove, animDuration);
